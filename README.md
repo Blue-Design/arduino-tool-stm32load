@@ -1,7 +1,5 @@
 # arduinoSTM32load
-multiplatform launcher for Arduino Star OTTO dfu-util flashing utility
-
-based on arduino101load by Martino Facchin : https://github.com/facchinm
+multiplatform launcher for [Arduino STM32F4 Core](https://github.com/arduino-org/arduino-core-stm32f4) dfu-util flashing utility
 
 ## Compiling
 
@@ -14,7 +12,7 @@ export GOBIN=.
 go get -d
 go build
 ```
-to produce a binary of `arduino101load` for your architecture.
+to produce a binary of `arduinoSTM32load` for your architecture.
 
 To cross compile for different OS/architecture combinations, execute
 ```bash
@@ -23,3 +21,5 @@ GOOS=darwin GOARCH=amd64 go build #osx
 GOOS=linux GOARCH=386 go build    #linux_x86
 GOOS=linux GOARCH=amd64 go build  #linux_x86-64
 ```
+## Credits
+`arduinoSTM32load` is based on [arduino101load](https://github.com/facchinm/arduino101load) by [Martino Facchin](https://github.com/facchinm)
